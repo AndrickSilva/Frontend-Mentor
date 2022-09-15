@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--ff-400);
+}
+
+:root {
+
+    --primary-orange: hsl(31, 77%, 52%);
+    --primary-cyan: hsl(184, 100%, 22%);
+    --primary-dark-cyan: hsl(179, 100%, 13%);
+    --para: hsla(0, 0%, 100%, 0.75);
+    --button: hsl(0, 0%, 95%);
+
+    --ff-700: 'Big Shoulders Display', cursive;
+    --ff-400: 'Lexend Deca', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    gap: 0em;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.c-o {
+    border-radius: 5px 0 0 5px;
+}
+
+.card-1 {
+    background-color: var(--primary-orange);
+    padding: 4.5em 1.8em;
+    /* min-height: 65vh; */
+}
+
+.card-1 h2 {
+    font-family: var(--ff-700);
+    color: var(--button);
+    font-weight: 700;
+    margin-bottom: 1.2em;
+}
+
+.card-1 p {
+    color: var(--para);
+    text-align: left;
+    margin-bottom: 6em;
+}
+
+.card-1 button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 200px;
+    color: var(--primary-orange);
+    border: 1px solid var(--primary-orange);
+    transition: all 0.2s ease-in;
+}
+
+.card-1 button:hover {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 200px;
+    color: #fff;
+    background-color: var(--primary-orange);
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.card-light {
+    background-color: var(--primary-cyan);
+}
+
+.card-light button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 200px;
+    color: var(--primary-cyan);
+    border: 1px solid var(--primary-cyan);
+    transition: all 0.2s ease-in;
+}
+
+.card-light button:hover {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 200px;
+    color: #fff;
+    background-color: var(--primary-cyan);
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.card-dark {
+    background-color: var(--primary-dark-cyan);
+    border-radius: 0 5px 5px 0;
+}
+
+.card-dark button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 200px;
+    color: var(--primary-dark-cyan);
+    border: 1px solid var(--primary-dark-cyan-cyan);
+    transition: all 0.2s ease-in;
+}
+
+.card-dark button:hover {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 200px;
+    color: #fff;
+    background-color: var(--primary-dark-cyan);
+    cursor: pointer;
+    border: 1px solid #fff;
+
+}
+
+@media screen and (max-width:1000px) {
+    .container-fluid {
+        flex-direction: column;
+        max-width: 25em;
+        padding: 2em 0;
+    }
+
+    .c-o {
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .card-dark {
+        border-radius: 0 0px 5px 5px;
+    }
+
+
+}

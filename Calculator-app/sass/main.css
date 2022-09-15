@@ -1,0 +1,136 @@
+/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+:root {
+  --Font-size: 32px;
+  --Weights: 700;
+  --main-bg: hsl(222, 26%, 31%);
+  --toggle-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+  --key-bg: hsl(225, 21%, 49%);
+  --key-shadow: hsl(224, 28%, 35%);
+  --Red: hsl(6, 63%, 50%);
+  --Dark-red: hsl(6, 70%, 34%);
+  --Light-Grayish-orange: hsl(30, 25%, 89%);
+  --Grayish-orange: hsl(28, 16%, 65%);
+  --dark-grayish-blue: hsl(221, 14%, 31%);
+  --white: hsl(0, 0, 100%);
+}
+
+body {
+  background-color: var(--main-bg);
+}
+
+.calc-container {
+  margin: auto;
+  background-color: var(--main-bg);
+  max-width: 30rem;
+  height: 100%;
+  padding: 1.5em;
+  margin-top: 5em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h2 {
+  font-weight: 700;
+  font-size: var(--Font-size);
+  color: #fff;
+}
+header p {
+  font-size: 0.8em;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  background-color: red;
+}
+.switch .toggle-label {
+  display: flex;
+  gap: 0.8em;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  background-color: var(--screen-bg);
+  border: none;
+  padding: 2rem;
+  border-radius: 10px;
+  font-size: var(--Font-size);
+  color: #fff;
+  outline: none;
+  margin: 0.4em 0;
+}
+
+.key-pad {
+  background-color: var(--toggle-bg);
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+}
+.key-pad .row {
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.key-pad .row .del {
+  background-color: var(--key-bg);
+  color: #fff;
+}
+.key-pad .row .del:hover {
+  background-color: hsl(224deg, 51%, 76%);
+}
+.key-pad .row .last-btn {
+  width: 10.8rem;
+  height: 3rem;
+}
+.key-pad .row .equal {
+  background-color: var(--Red);
+  color: #fff;
+}
+.key-pad .row .equal:hover {
+  background-color: hsl(6deg, 93%, 67%);
+}
+.key-pad .row .reset {
+  background-color: var(--key-bg);
+  color: #fff;
+}
+.key-pad .row .reset:hover {
+  background-color: hsl(224deg, 51%, 76%);
+}
+.key-pad button {
+  width: 5em;
+  height: 3em;
+  padding: 0.4em;
+  margin: 0.4em;
+  border: none;
+  border-radius: 0.3em;
+  font-size: 0.98em;
+  font-weight: var(--Weights);
+  background-color: var(--Light-Grayish-orange);
+  box-shadow: var(--Grayish-orange);
+  color: var(--dark-grayish-blue);
+}
+.key-pad button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

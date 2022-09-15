@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="./sass/main.css">
+</head>
+
+<body>
+  <div class="calc-container">
+
+    <header>
+      <h2>calc</h2>
+      <div class="top-left">
+        <p>THEME</p>
+        <div class="switch-toggle switch">
+
+          <div class="toggle-label">
+            <label for="1" onclick="">1</label>
+            <label for="2" class="" onclick="">2</label>
+            <label for="3" onclick="">3</label>
+          </div>
+
+          <div class="toggle">
+            <input id="1" name="state-d" type="radio" checked="checked" />
+
+            <input id="2" name="state-d" type="radio" />
+
+            <input id="3" name="state-d" type="radio" />
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+
+    <input style="text-align: right;" type="number onwheel=" this.blur()" class="screen">
+
+    <div class="key-pad">
+      <div class="row">
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button del">DEL</button>
+      </div>
+      <div class="row">
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button">+</button>
+      </div>
+      <div class="row">
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button">-</button>
+      </div>
+      <div class="row">
+        <button class="button">.</button>
+        <button class="button">0</button>
+        <button class="button">/</button>
+        <button class="button">*</button>
+      </div>
+      <div class="row">
+        <button class="button last-btn reset">RESET</button>
+        <button class="button last-btn equal">=</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

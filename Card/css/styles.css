@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --Primary: hsl(233, 47%, 7%);
+    /*main background*/
+    --Secondary: hsl(244, 38%, 16%);
+    /*card background*/
+    --H-text: hsl(277, 64%, 61%);
+    /*accent*/
+    --H-S-White: hsl(0, 0%, 100%);
+    /*main heading, stats*/
+    --M-text: hsla(0, 0%, 100%, 0.75);
+    /*main paragraph*/
+    --SH-text: hsla(0, 0%, 100%, 0.6);
+    /*stat headings*/
+    --I: 'Inter', sans-serif;
+    --L: 'Lexend Deca', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Primary);
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 60vh;
+    background-color: var(--Secondary);
+    border-radius: 5px;
+}
+
+.header {
+    color: var(--H-S-White);
+    font-family: var(--I);
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin-bottom: 1.875rem;
+    max-width: 24rem;
+}
+
+.main-para {
+    color: var(--M-text);
+    font-family: var(--I);
+    font-weight: 400;
+    font-size: 0.9375rem;
+    margin-bottom: 3.75rem;
+    line-height: 1.5;
+}
+
+.left {
+    padding: 0 70px;
+    height: 18em;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 21.625rem;
+}
+
+.stats-heading {
+    color: var(--SH-text);
+    font-family: var(--I);
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-top: 5px;
+}
+
+.val {
+    color: var(--H-S-White);
+    font-size: 1.3em;
+    font-family: var(--I);
+    font-weight: 800;
+}
+
+
+span {
+    color: var(--H-text);
+}
+
+.right{
+    background-color: var(--H-text);
+    width: 85vw;
+    height: 100%;
+}
+
+.right > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: opacity(.5);
+    aspect-ratio: 16/13;
+}
