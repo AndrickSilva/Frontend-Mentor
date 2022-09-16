@@ -44,7 +44,7 @@ body {
   max-width: 30rem;
   height: 100%;
   padding: 1.5em;
-  margin-top: 5em
+  margin-top: 5em;
 }
 
 header {
@@ -74,11 +74,15 @@ header {
 }
 
 .switch {
-  background-color: red;
-
   .toggle-label {
     display: flex;
     gap: 0.8em;
+  }
+  .toggle {
+    background-color: var(--toggle-bg);
+    border-radius: 100px;
+    padding: 0.1em 0.4em;
+    color: red;
   }
 }
 
@@ -107,13 +111,13 @@ header {
     width: fit-content;
     margin: auto;
 
-    .del{
-        background-color: var(--key-bg);
-        color: #fff;
+    .del {
+      background-color: var(--key-bg);
+      color: #fff;
 
-        &:hover{
-          background-color:hsl(224, 51%, 76%);
-        }
+      &:hover {
+        background-color: hsl(224, 51%, 76%);
+      }
     }
     .last-btn {
       width: 10.8rem;
@@ -124,7 +128,7 @@ header {
       background-color: var(--Red);
       color: #fff;
 
-      &:hover{
+      &:hover {
         background-color: hsl(6, 93%, 67%);
       }
     }
@@ -133,8 +137,8 @@ header {
       background-color: var(--key-bg);
       color: #fff;
 
-      &:hover{
-        background-color:hsl(224, 51%, 76%);
+      &:hover {
+        background-color: hsl(224, 51%, 76%);
       }
     }
   }
@@ -146,14 +150,14 @@ header {
     margin: 0.4em;
     border: none;
     border-radius: 0.3em;
-    font-size: .98em;
+    font-size: 0.98em;
     // font-size: var(--Font-size);
     font-weight: var(--Weights);
     background-color: var(--Light-Grayish-orange);
     box-shadow: var(--Grayish-orange);
     color: var(--dark-grayish-blue);
 
-    &:hover{
+    &:hover {
       background-color: #fff;
       cursor: pointer;
     }
