@@ -20,8 +20,12 @@
 
 }
 
+.padding {
+    padding: 4em 10em;
+}
+
 .hero {
-    padding: 5em 10em 5em;
+    padding-bottom: 5em;
     display: flex;
     justify-content: space-between;
 }
@@ -131,7 +135,6 @@
     display: flex;
     gap: 1em;
     align-items: center;
-    padding-bottom: 0em;
 }
 
 .main {
@@ -143,10 +146,51 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 .bottom-bg {
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1140px) {
+    .padding {
+        padding: 4em 1em;
+    }
+
+    .right {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .card-wraper {
+        flex-direction: column;
+    }
+
+    .start {
+        align-self: center;
+    }
+
+
+    .end {
+        align-self: center;
+    }
+
+    .left h1 {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .left p {
+        text-align: center;
+        padding-bottom: 1em;
+    }
 }
