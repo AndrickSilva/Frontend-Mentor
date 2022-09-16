@@ -14,6 +14,11 @@ nav {
     background-color: #ccc;
 }
 
+.hero>h2 {
+    text-align: center;
+    padding: 2em 0;
+}
+
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -21,6 +26,8 @@ nav {
     justify-items: center;
     margin: auto;
     padding: 2em 0;
+    gap: 3em;
+    width: fit-content;
 }
 
 .project {
@@ -28,9 +35,9 @@ nav {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid red; */
-    border-radius: 5px;
-    padding: 1.5em 0;
+    height: fit-content;
+    border-radius: 15px;
+    padding-bottom: 1.5em;
     -webkit-box-shadow: 3px 4px 40px -18px rgba(0, 0, 0, 0.54);
     -moz-box-shadow: 3px 4px 40px -18px rgba(0, 0, 0, 0.54);
     box-shadow: 3px 4px 40px -18px rgba(0, 0, 0, 0.54);
@@ -44,11 +51,11 @@ nav {
 .card-footer {
     display: flex;
     gap: 1em;
-    padding-top: 1em;
+    /* padding-top: 1em; */
 }
 
 .card-footer img {
-    height: 50px
+    height: 30px
 }
 
 .card h2 {
