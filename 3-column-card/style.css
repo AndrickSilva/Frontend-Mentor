@@ -30,7 +30,7 @@ body {
 .container-fluid {
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: var(--para);
     gap: 0em;
     max-width: 60%;
     margin: 0 auto;
