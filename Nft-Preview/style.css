@@ -38,28 +38,95 @@ body {
     background-color: var(--card-bg);
     border-radius: 15px;
     padding: 1.5em;
+    max-width: 22em;
 
 }
 
 .card-img {
+    border-radius: 10px;
+    position: relative;
     height: 40vh;
     width: 100%;
+    overflow: hidden;
+    background-color: var(--Cyan);
+    z-index: 2;
 }
 
-.card-img img {
+.eye {
+    color: var(--White);
+    height: 2.5em;
+    z-index: -1;
+    position: absolute;
+    top: 8.5em;
+    left: 8.3em;
+}
+
+.card-img img:first-child:hover {
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.card-img img:first-child {
     height: 100%;
     width: 100%;
-    border-radius: 10px;
+    z-index: -2;
 }
 
 .card-body h2 {
     color: var(--White);
+    font-weight: 600;
+}
+
+.card-body h2:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+    transition: 0.3s ease-out;
+
 }
 
 .card-body p {
     color: var(--Soft-blue);
+    margin: 1em 0;
+    font-size: 18px;
 }
 
 .card-body span {
     color: var(--Cyan);
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--hr-col);
+    margin: 1em;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: 300;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    align-items: center;
+}
+
+.footer img {
+    height: 2.3em;
+    border-radius: 200px;
+    border: 2px solid var(--Soft-blue);
+}
+
+.footer p b:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+    transition: 0.3s ease-out;
+
 }
