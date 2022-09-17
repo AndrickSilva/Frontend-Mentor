@@ -45,7 +45,7 @@ body {
 .card-img {
     border-radius: 10px;
     position: relative;
-    height: 40vh;
+    height: 38vh;
     width: 100%;
     overflow: hidden;
     background-color: var(--Cyan);
