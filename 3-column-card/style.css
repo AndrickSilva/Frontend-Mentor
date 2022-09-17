@@ -130,7 +130,7 @@ body {
     .container-fluid {
         flex-direction: column;
         max-width: 25em;
-        padding: 2em 0;
+        padding: 2em 1em;
     }
 
     .c-o {
