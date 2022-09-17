@@ -63,7 +63,7 @@
 .ratings {
     display: flex;
     justify-content: start;
-    width: 24em;
+    /* width: 24em; */
     border-radius: 5px;
     gap: 1em;
     align-items: center;
@@ -156,15 +156,19 @@
     z-index: -1;
 }
 
-@media screen and (max-width: 1140px) {
-    .padding {
-        padding: 4em 1em;
-    }
-
+@media screen and (max-width: 1286px) {
     .right {
         padding-left: 0;
     }
 }
+
+@media screen and (max-width: 1140px) {
+    .padding {
+        padding: 4em 1em;
+    }
+}
+
+
 
 @media screen and (max-width: 1000px) {
     .hero {
@@ -193,4 +197,13 @@
         text-align: center;
         padding-bottom: 1em;
     }
+
+    .card {
+        width: 100%;
+    }
+
+    .ratings {
+        width: 100%;
+    }
+
 }
