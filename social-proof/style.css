@@ -115,10 +115,19 @@
     color: var(--primary-Soft-Pink);
 }
 
+.card-name span:first-child {
+    font-weight: 700;
+}
+
+.card-name span {
+    font-size: 1rem;
+}
+
 .card-name {
     display: flex;
     flex-direction: column;
     gap: 0.3em;
+
 }
 
 .card p {
