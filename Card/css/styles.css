@@ -131,7 +131,7 @@ span {
     .container {
         flex-direction: column-reverse;
         text-align: center;
-        width: 50vw;
+        width: 60vw;
     }
 
     .left {
@@ -156,6 +156,6 @@ span {
 
 @media screen and (max-width: 640px) {
     .container {
-        width: 60vh;
+        width: 80vw;
     }
 }
