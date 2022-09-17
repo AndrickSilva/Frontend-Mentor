@@ -50,6 +50,7 @@ body {
     overflow: hidden;
     background-color: var(--Cyan);
     z-index: 2;
+    cursor: pointer;
 }
 
 .eye {
@@ -65,7 +66,6 @@ body {
     position: absolute;
     top: 0;
     opacity: 0.5;
-    cursor: pointer;
     transition: 0.3s ease-out;
 }
 
