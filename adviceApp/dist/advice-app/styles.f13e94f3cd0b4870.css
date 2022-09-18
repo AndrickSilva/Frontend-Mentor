@@ -1,1 +1,95 @@
-@import"https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap";*{padding:0;margin:0;box-sizing:border-box;scroll-behavior:smooth;font-family:Manrope,sans-serif}:root{--Light-Cyan: hsl(193, 38%, 86%);--Neon-Green: hsl(150, 100%, 66%);--Grayish-Blue: hsl(217, 19%, 38%);--Dark-Grayish-Blue: hsl(217, 19%, 24%);--Dark-Blue: hsl(218, 23%, 16%)}.hero{min-height:100vh;background-color:var(--Dark-Blue);display:flex;justify-content:center;align-items:center;overflow:hidden;padding:2em 1em}.card{background-color:var(--Dark-Grayish-Blue);display:flex;justify-content:space-evenly;align-items:center;flex-direction:column;min-height:45vh;border-radius:15px;padding:1em 4em 0;max-width:33em}.card span{color:var(--Neon-Green);letter-spacing:.222em;text-transform:uppercase;font-weight:400;font-size:.9rem}.card h2{text-align:center;color:var(--Light-Cyan);font-size:28px;height:6em;display:flex;justify-content:center;align-items:center}.card img{width:100%}.toggle{position:relative}.toggle-icon{background-color:var(--Neon-Green);width:3.5em;height:3.5em;border-radius:200px;display:flex;justify-content:center;align-items:center;position:absolute;bottom:-3.1em;right:-1.6em;cursor:pointer}.toggle-icon:hover{box-shadow:var(--Neon-Green) 0 7px 29px 0;transition:.3s ease-out}.toggle-icon img{width:50%;height:50%}@media screen and (max-width: 520px){.card{padding:1em 1em 0}}
+@import"https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Manrope, sans-serif
+}
+
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%)
+}
+
+.hero {
+    min-height: 100vh;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2em 1em
+}
+
+.card {
+    background-color: var(--Dark-Grayish-Blue);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    min-height: 45vh;
+    border-radius: 15px;
+    padding: 1em 4em 0;
+    max-width: 33em
+}
+
+.card span {
+    color: var(--Neon-Green);
+    letter-spacing: .222em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .9rem
+}
+
+.card h2 {
+    text-align: center;
+    color: var(--Light-Cyan);
+    font-size: 28px;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card img {
+    width: 100%
+}
+
+.toggle {
+    position: relative
+}
+
+.toggle-icon {
+    background-color: var(--Neon-Green);
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -3.1em;
+    right: -1.8em;
+    cursor: pointer
+}
+
+.toggle-icon:hover {
+    box-shadow: var(--Neon-Green) 0 7px 29px 0;
+    transition: .3s ease-out
+}
+
+.toggle-icon img {
+    width: 50%;
+    height: 50%
+}
+
+@media screen and (max-width: 520px) {
+    .card {
+        padding: 1em 1em 0
+    }
+}
