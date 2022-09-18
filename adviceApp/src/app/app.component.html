@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="hero">
 
-<head>
+  <div class="card">
+    <span>{{id}}</span>
 
-</head>
+    <h2>“ {{quote}} ”</h2>
 
-<body>
+    <img src="./assets/images/pattern-divider-desktop.svg" alt="divider">
 
-  Advice #
-  <!-- Advice ID goes here -->
+    <div class="toggle" (click)="fetchAdvice()">
+      <div class="toggle-icon">
+        <img src="./assets/images/icon-dice.svg" alt="divider">
+      </div>
+    </div>
 
-  "
-  <!-- Advice text goes here -->"
-
-</body>
-
-</html>
+  </div>
+</div>
