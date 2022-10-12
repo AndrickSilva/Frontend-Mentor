@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Launch countdown timer</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-<div class="hero">
-  
+  <div class="hero">
+    <img src="./images/bg-stars.svg" alt="stars">
     <h2>We're launching soon</h2>
-  
-  <div class="countdown">
-    <div class="dateContainer">
-      <div class="date">{time}</div>
+
+    <div class="countdown">
+      <div class="dateContainer">
+        <div id="days" class="date">08</div>
         <p>Days</p>
-    </div>
-  
-    <div class="dateContainer">
-      <div class="date">{time}</div>
+      </div>
+
+      <div class="dateContainer">
+        <div id="hours" class="date">23</div>
         <p>Hours</p>
-    </div>
-  
-    <div class="dateContainer">
-      <div class="date">{time}</div>
+      </div>
+
+      <div class="dateContainer">
+        <div id="minutes" class="date">55</div>
         <p>Minutes</p>
-    </div>
-  
-    <div class="dateContainer">
-      <div class="date">{time}</div>
+      </div>
+
+      <div class="dateContainer">
+        <div id="seconds" class="date">41</div>
         <p>Seconds</p>
+      </div>
     </div>
   </div>
 
-</div>
-
+    <div class="icon-container">
+      <i class="fa-brands fa-square-facebook"></i>
+      <i class="fa-brands fa-pinterest"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+<script src="./script.js"></script>
 </body>
+
 </html>
