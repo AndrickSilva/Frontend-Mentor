@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 14px;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+:root {
+    --Grayish-blue: hsl(237, 18%, 59%);
+    --Soft-red: hsl(345, 95%, 68%);
+
+    --White: hsl(0, 0%, 100%);
+    --Dark-desaturated: hsl(236, 21%, 26%);
+    --ery-dark-blue: hsl(235, 16%, 14%);
+    --ery-dark-blue: hsl(234, 17%, 12%);
+}
