@@ -15,7 +15,7 @@ const countdown = () => {
     let timeSeconds = Math.floor((difference % minutes) / seconds)
 
     timeHours = timeHours < 10 ? "0" + timeHours : timeHours
-    timeMinutes = timeMinutes < 18 ? "0" + timeMinutes : timeMinutes
+    timeMinutes = timeMinutes < 10 ? "0" + timeMinutes : timeMinutes
     timeSeconds = timeSeconds < 10 ? "0" + timeSeconds : timeSeconds
 
     document.getElementById("days").innerHTML = timeDays
