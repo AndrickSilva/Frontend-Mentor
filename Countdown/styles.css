@@ -77,7 +77,8 @@ body{
     color: var(--Soft-red);
     padding: 0.5em;
     border-radius: 0.111em;
-    width: 2.2222em;
+    min-width: 2.5em;
+    text-align: center;
 }
 
 .icon-container{
