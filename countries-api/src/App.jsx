@@ -1,10 +1,13 @@
 import './App.css'
+import Home from './components/Home'
+import Navigation from './components/Navigation'
 
 function App() {
 
   return (
     <div className="App">
-      <h1 className='bg-darkBg text-darkText font-nunito'>Hello</h1>
+      <Navigation/>
+      <Home/>
     </div>
   )
 }
