@@ -1,20 +1,19 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { AiOutlineSearch, AiOutlineDown } from 'react-icons/ai'
 import axios from 'axios'
 
 
 const Home = () => {
-  const [Country, setCountry] = useState({
-
-  })
-
   useEffect(() => {
     loadData()
-  },[])
+  }, [])
 
+  const [Country, setCountry] = useState([])
   const loadData = async () => {
-    const data = await axios.get(`https://restcountries.com/v3.1/name/all`);
-    console.log(data.data);
+    const data = await axios.get(`https://restcountries.com/v3/all`);
+    // console.log(data.data);
+    setCountry(data.data)
+    // console.log(Country.map((i) => (console.log(i.flags[1]))));
   }
 
   const num = [1, 2, 3, 4, 5, 6];
@@ -24,7 +23,7 @@ const Home = () => {
       <div className="flex justify-between items-center pb-14 md:flex-row flex-col gap-5">
 
         <div className="relative ">
-          <input type="search" className='placeholder:text-gray-200 bg-darkElem py-4 pl-20 pr-10 sm:pr-28 rounded-md' placeholder='Search for a country...' />
+          <input type="search" className='placeholder:text-gray-200 focus:border-none text-gray-200 bg-darkElem py-4 pl-20 pr-10 sm:pr-28 rounded-md' placeholder='Search for a country...' />
           <AiOutlineSearch className='absolute top-4 left-7 text-gray-100 text-2xl' />
         </div>
 
@@ -43,14 +42,14 @@ const Home = () => {
       </div>
       <div className="grid gap-14 justify-center items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 ">
         {
-          num.map((i) => (
-            <div className="flex flex-col w-72 bg-darkElem rounded-md overflow-hidden">
-              <img src="https://flagcdn.com/mx.svg" alt="Flag" />
+          Country.map((i, index) => (
+            <div key={index} className="flex flex-col w-72 bg-darkElem rounded-md overflow-hidden">
+              <img src={i.flags[0]} alt="Flag" />
               <div className="text-darkText p-6">
-                <h1 className='text-xl pb-4 font-semibold'>United State of America</h1>
-                <p className='text-gray-300 font-light'><b className='text-gray-200'>Population:</b> 81,333.33</p>
-                <p className='text-gray-300 font-light'><b className='text-gray-200'>Region:</b> Europe</p>
-                <p className='text-gray-300 font-light'><b className='text-gray-200'>Capital:</b> Berlin</p>
+                <h1 className='text-xl pb-4 font-semibold'>{i.name.common}</h1>
+                <p className='text-gray-300 font-light'><b className='text-gray-200'>Population:</b> {i.population}</p>
+                <p className='text-gray-300 font-light'><b className='text-gray-200'>Region:</b> {i.region}</p>
+                <p className='text-gray-300 font-light'><b className='text-gray-200'>Capital:</b> {i.capital}</p>
               </div>
             </div>
           ))
