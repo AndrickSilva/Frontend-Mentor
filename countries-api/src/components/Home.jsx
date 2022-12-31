@@ -44,7 +44,7 @@ const Home = () => {
         {
           Country.map((i, index) => (
             <div key={index} className="flex flex-col w-72 bg-darkElem rounded-md overflow-hidden">
-              <img src={i.flags[0]} alt="Flag" />
+              <img src={i.flags[1]} alt="Flag" className='h-48'/>
               <div className="text-darkText p-6">
                 <h1 className='text-xl pb-4 font-semibold'>{i.name.common}</h1>
                 <p className='text-gray-300 font-light'><b className='text-gray-200'>Population:</b> {i.population}</p>
