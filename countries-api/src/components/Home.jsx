@@ -30,8 +30,8 @@ const Home = () => {
     e.preventDefault()
     if (inputText == "") {
       regionLink = "all"
-    }else
-    regionLink = `/name/${inputText}`
+    } else
+      regionLink = `/name/${inputText}`
     loadData(regionLink)
   }
 
@@ -41,7 +41,7 @@ const Home = () => {
 
       <div className="flex justify-between items-center pb-14 md:flex-row flex-col gap-5">
 
-        <form className="relative " onSubmit={(e)=>handleSubmit(e)}>
+        <form className="relative " onSubmit={(e) => handleSubmit(e)}>
           <input type="search" className='shadow-lg dark:placeholder:text-gray-200 placeholder:text-gray-800 focus:border-none dark:text-gray-200 text-gray-800 dark:bg-darkElem bg-lightElem py-4 pl-20 pr-10 sm:pr-28 rounded-md' placeholder='Search for a country...' value={inputText} onChange={(e) => setInputText(e.target.value)} />
           <AiOutlineSearch className='absolute top-4 left-7 dark:text-gray-100 text-gray-900 text-2xl' />
         </form>
@@ -50,7 +50,7 @@ const Home = () => {
           <button name="region" className='shadow-lg dark:bg-darkElem bg-lightElem flex justify-center items-center gap-3 dark:text-gray-200 text-gray-800 py-4 rounded-md px-8'>Filter by Region
             <AiOutlineDown className=' text-xl  dark:text-gray-100 text-gray-900' />
           </button>
-          <div className="shadow-lg group-hover:flex hidden absolute mt-2 dark:bg-darkElem bg-lightElem min-w-full dark:text-gray-200 text-gray-800 rounded-md flex-col transition-all duration-300 ease-in-out">
+          <div className="shadow-lg group-hover:flex hidden absolute mt-2 dark:bg-darkElem bg-lightElem min-w-full dark:text-gray-200 text-gray-800 rounded-md flex-col transition duration-300 ease-in-out">
             <p className='pt-2 pb-1 px-8 cursor-pointer' value="All" onClick={(e) => handleFilter(e.currentTarget.innerText)}>All</p>
             <p className='py-1 px-8 cursor-pointer' value="Africa" onClick={(e) => handleFilter(e.currentTarget.innerText)}>Africa</p>
             <p className='py-1 px-8 cursor-pointer' value="America" onClick={(e) => handleFilter(e.currentTarget.innerText)}>America</p>
@@ -65,7 +65,7 @@ const Home = () => {
           Country.map((i, index) => (
             <div key={index} className="shadow-lg flex flex-col w-72 dark:bg-darkElem bg-lightElem rounded-md overflow-hidden">
               <img src={i.flags[1]} alt="Flag" className='h-48' />
-              <div className="text-darkText p-6">
+              <div className="dark:text-darkText text-lightText p-6">
                 <h1 className='text-xl pb-4 font-semibold'>{i.name.common}</h1>
                 <p className='dark:text-gray-300 text-gray-700 font-light'><b className='dark:text-gray-200 text-gray-800'>Population:</b> {i.population}</p>
                 <p className='dark:text-gray-300 text-gray-700 font-light'><b className='dark:text-gray-200 text-gray-800'>Region:</b> {i.region}</p>
