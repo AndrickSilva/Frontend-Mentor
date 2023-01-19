@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { AiOutlineSearch, AiOutlineDown } from 'react-icons/ai'
 import axios from 'axios'
-
+import {Link} from 'react-router-dom'
 
 const Home = () => {
   useEffect(() => {
@@ -63,7 +63,7 @@ const Home = () => {
       <div className="grid gap-14 justify-center items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 ">
         {
           Country.map((i, index) => (
-            <div key={index} className="shadow-lg flex flex-col w-72 dark:bg-darkElem bg-lightElem rounded-md overflow-hidden">
+            <Link to={`/Details/${i.name.common}`} key={index} className="shadow-lg flex flex-col w-72 dark:bg-darkElem bg-lightElem rounded-md overflow-hidden">
               <img src={i.flags[1]} alt="Flag" className='h-48' />
               <div className="dark:text-darkText text-lightText p-6">
                 <h1 className='text-xl pb-4 font-semibold'>{i.name.common}</h1>
@@ -71,7 +71,7 @@ const Home = () => {
                 <p className='dark:text-gray-300 text-gray-700 font-light'><b className='dark:text-gray-200 text-gray-800'>Region:</b> {i.region}</p>
                 <p className='dark:text-gray-300 text-gray-700 font-light'><b className='dark:text-gray-200 text-gray-800'>Capital:</b> {i.capital}</p>
               </div>
-            </div>
+            </Link>
           ))
         }
       </div>
